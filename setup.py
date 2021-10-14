@@ -14,7 +14,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0',
+    version='1.1',
 
     description='A simple drop in replacement for Dia for use in developing and testing Python plugins',
     long_description=long_description,
@@ -53,6 +53,7 @@ setup(
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.9',
     ],
 
     # What does your project relate to?
