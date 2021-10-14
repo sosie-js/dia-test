@@ -12,13 +12,19 @@ existing diagrams or create new ones
 to Dia see
 http://mail.gnome.org/archives/dia-list/2007-March/msg00092.html"""
 
-from dia import dia #required in python3
-from dia import * #To expose modules classes as atributes
+
+
 
 try:
+    from dia import * #To expose modules classes as atributes
     _dia = dia() 
 except:
-    _dia=dia
+    #in python3, the next line
+    # from dia.dia import *
+    #is equivalent to 
+    from .dia import *
+    
+_dia=dia()
     
 def active_display() :
     """ active_display() -> Display.  Delivers the
