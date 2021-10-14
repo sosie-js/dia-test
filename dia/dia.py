@@ -1,6 +1,9 @@
 import warnings
-import cPickle as pickle
-
+try:
+    import cPickle as pickle
+except:
+    import _pickle as pickle #cPickle uses _pickle in python3
+    
 class Sheet :
 	'''returned by dia.register_export() but not used otherwise yet.'''
 	def __init__(self) :
