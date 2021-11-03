@@ -17,12 +17,13 @@ http://mail.gnome.org/archives/dia-list/2007-March/msg00092.html"""
 
 try:
     from dia import * #To expose modules classes as atributes
-    _dia = dia() 
+    import dia.dia.dia as dia  # module.file.class to make dumpObj happy in python3!
 except:
     #in python3, the next line
     # from dia.dia import *
     #is equivalent to 
-    from .dia import *
+    from .dia import *  # this includes dia but does not improve dumpObj output in python2
+
     
 _dia=dia()
     

@@ -1,15 +1,7 @@
-# Dia-Mock (Python2-3)
-A mocking module for writing and testing Python plugins for [Dia](https://wiki.gnome.org/action/show/Apps/Dia).
-[More info](http://chrisdaley.biz/easy-python-for-dia.html)
-
-## Mocking Sample: ##
-
-```python
 #
 #   diamock.py ..  bunnyfied by SoSie on 03 nov 2021
 #
 # 
-
 
 from dumpObj import dumpObj #here is the golden carot
 
@@ -55,10 +47,9 @@ objects = layer.objects
 #otypes=dia.registered_types()  is not supported by dia-test.
 #As this is the core of creating objects to be added to layer
 #we can play only here unless Chris Daley original 
-#dia-test accept I merge his project in mine called [pythondia](https://github.com/sosie-js/python-dia) -- SoSie
+#dia-test accept I merge his project in mine called pythondia -- SoSie
 
 
 #enjoy the doc
 dumpObj(dia)
 dumpObj(layer)
-```
