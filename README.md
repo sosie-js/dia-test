@@ -24,7 +24,7 @@ if __name__ == '__main__' or not onDiaLaunched():
     
     #dia is the mocked version of lib pydia library.
     # it is now python2-3 compatible
-    #available here: https://github.com/sosie-js/dia-test
+    #available here: https://github.com/sosie-js/python-dia-mock-plugin
     #installable with the scripts helpers install*.sh
     
     import dia 
