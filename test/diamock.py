@@ -16,7 +16,7 @@ if __name__ == '__main__' or not onDiaLaunched():
     
     #dia is the mocked version of lib pydia library.
     # it is now python2-3 compatible
-    #available here: https://github.com/sosie-js/dia-test
+    #available here: https://github.com/sosie-js/python-dia-mock-plugin
     #installable with the scripts helpers install*.sh
     
     import dia 
@@ -46,8 +46,7 @@ objects = layer.objects
 
 #otypes=dia.registered_types()  is not supported by dia-test.
 #As this is the core of creating objects to be added to layer
-#we can play only here unless Chris Daley original 
-#dia-test accept I merge his project in mine called pythondia -- SoSie
+#we can play only here
 
 
 #enjoy the doc
