@@ -54,9 +54,7 @@ objects = layer.objects
 
 #otypes=dia.registered_types()  is not supported by dia-test.
 #As this is the core of creating objects to be added to layer
-#we can play only here unless Chris Daley original 
-#dia-test accept I merge his project in mine called [pythondia](https://github.com/sosie-js/python-dia) -- SoSie
-
+#we can play only here.
 
 #enjoy the doc
 dumpObj(dia)
