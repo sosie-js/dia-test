@@ -1,6 +1,6 @@
 # Mock plugin for Python Dia 
 A mocking module for writing and testing Python plugins for [Dia](https://wiki.gnome.org/action/show/Apps/Dia).
-[More info](http://chrisdaley.biz/easy-python-for-dia.html)
+Now plugin of [python-dia](https://sosie-js.github.io/python-dia/)
 
 ## Mocking Sample: ##
 
