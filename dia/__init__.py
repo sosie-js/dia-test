@@ -22,8 +22,9 @@ except:
     #in python3, the next line
     # from dia.dia import *
     #is equivalent to 
-    from .dia import *  # this includes dia but does not improve dumpObj output in python2
-
+    #from .dia import * # this includes dia but does not improve dumpObj output in python2
+    #from .lib import * 
+    from .dia import *
     
 _dia=dia()
     
@@ -44,8 +45,8 @@ def get_object_type(type) :
                     a type name like "Standard - Line" return the
                     factory to create objects of that type, see:
                     DiaObjectType"""
-    global _dia
-    return _dia.get_object_type(type)
+    #global _dia
+    return dia.get_object_type(type)
 
 def group_create(objs) :
     """group_create(List of Object: objs) -> Object. 
@@ -126,8 +127,8 @@ def registered_types() :
     """registered_types() -> Dict of ObjectType indexed by
                         their name.  A dictionary of all registered object
                         factories, aka. DiaObjectType"""
-    global _dia
-    return _dia.registered_types()
+    #global _dia
+    return dia.registered_types()
 
 def update_all() :
     """update_all() -> None.  Force an asynchronous update
