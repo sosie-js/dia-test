@@ -1,0 +1,64 @@
+
+=======================
+0:__doc__:A Layer is part of a Diagram and can contain objects.
+-----------------
+
+=======================
+1:method:<bound method Layer.__init__ of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+2:__module__:dia.dia
+-----------------
+
+=======================
+3:method:<bound method Layer.add_object of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+4:method:<bound method Layer.destroy of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+5:attrs:None
+-----------------
+
+=======================
+6:method:<bound method Layer.find_closest_connection_point of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+7:method:<bound method Layer.find_closest_object of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+8:method:<bound method Layer.find_objects_in_rectangle of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+9:attrs:Backgound
+-----------------
+
+=======================
+10:method:<bound method Layer.object_get_index of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+11:attrs:[]
+-----------------
+
+=======================
+12:method:<bound method Layer.remove_object of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+13:method:<bound method Layer.render of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+14:method:<bound method Layer.update_extents of <dia.dia.Layer instance at 0x7f8f76a94488>>
+-----------------
+
+=======================
+15:attrs:1
+-----------------

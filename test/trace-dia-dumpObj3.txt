@@ -1,0 +1,156 @@
+
+=======================
+0:__class__:<class 'dia.dia.Layer'>
+-----------------
+
+=======================
+1:builtin:<method-wrapper '__delattr__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+2:attrs:{'extents': None, 'name': 'Backgound', 'objects': [], 'visible': 1}
+-----------------
+
+=======================
+3:builtin:<built-in method __dir__ of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+4:__doc__:A Layer is part of a Diagram and can contain objects.
+-----------------
+
+=======================
+5:builtin:<method-wrapper '__eq__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+6:builtin:<built-in method __format__ of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+7:builtin:<method-wrapper '__ge__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+8:builtin:<method-wrapper '__getattribute__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+9:builtin:<method-wrapper '__gt__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+10:builtin:<method-wrapper '__hash__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+11:method:<bound method Layer.__init__ of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+12:builtin:<built-in method __init_subclass__ of type object at 0x55841f126ef0>
+-----------------
+
+=======================
+13:builtin:<method-wrapper '__le__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+14:builtin:<method-wrapper '__lt__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+15:__module__:dia.dia
+-----------------
+
+=======================
+16:builtin:<method-wrapper '__ne__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+17:builtin:<built-in method __new__ of type object at 0x55841d8e7400>
+-----------------
+
+=======================
+18:builtin:<built-in method __reduce__ of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+19:builtin:<built-in method __reduce_ex__ of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+20:builtin:<method-wrapper '__repr__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+21:builtin:<method-wrapper '__setattr__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+22:builtin:<built-in method __sizeof__ of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+23:builtin:<method-wrapper '__str__' of Layer object at 0x7ff3a7382cd0>
+-----------------
+
+=======================
+24:builtin:<built-in method __subclasshook__ of type object at 0x55841f126ef0>
+-----------------
+
+=======================
+25:attrs:None
+-----------------
+
+=======================
+26:method:<bound method Layer.add_object of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+27:method:<bound method Layer.destroy of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+28:attrs:None
+-----------------
+
+=======================
+29:method:<bound method Layer.find_closest_connection_point of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+30:method:<bound method Layer.find_closest_object of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+31:method:<bound method Layer.find_objects_in_rectangle of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+32:attrs:Backgound
+-----------------
+
+=======================
+33:method:<bound method Layer.object_get_index of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+34:attrs:[]
+-----------------
+
+=======================
+35:method:<bound method Layer.remove_object of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+36:method:<bound method Layer.render of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+37:method:<bound method Layer.update_extents of <dia.dia.Layer object at 0x7ff3a7382cd0>>
+-----------------
+
+=======================
+38:attrs:1
+-----------------
