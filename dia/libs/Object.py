@@ -1,5 +1,5 @@
 """
-  pydia: Object.py - 2021.11
+  pydia: Object.py - 2022.01
   ================================================
   
   Template code generated from UML diagrams of PyDia
@@ -41,9 +41,6 @@ The main building block of diagrams.    """
 
     def __init__(self, type, *args) :
         
-       
-        
-        self.bounding_box = None # 
         self.connections = [ConnectionPoint(self) for _ in range(8)]
         self.handles = [Handle(self) for _ in range(8)] 
         self.parent = None # 
@@ -75,6 +72,7 @@ The main building block of diagrams.    """
             self.properties["elem_width"] = 20
             self.properties["elem_height"] = 20
         
+        self.bounding_box = self.properties["obj_bb"] # 
         self.type = type #extra?
 
     def add_property(self, key, value) :
@@ -110,9 +108,11 @@ The main building block of diagrams.    """
     def move(self, x, y):
         """ move(real: x, real: y) -> None.  Move the entire object. The given point is the new object.obj_pos. """
         c=Point(x,y)
+        #Matches the getter "elem_corner"
         self.properties["obj_pos"].value=str(c) #[c.x, c.y]
+        
     
-    def move_handle(self):
+    def move_handle(self, h, pos):
         """ move_handle(Handle: h, (real: x, real: y)[int: reason, int: modifiers]) -> None.  Move the given handle of the object to the given position """
         # returns 
         pass

@@ -21,7 +21,7 @@ dia.Paperinfo is part of dia.DiagramData describing the paper    """
     # Attributes:
     
     height = None  # () real: height of the drawable area (sans margins) 
-    is_portrait = None  # () int: paper orientation 
+    is_portrait = None  # () boolean: paper orientation 
     name = None  # () string: paper name, e.g. A4 or Letter 
     scaling = None  # () real: factor to zoom the diagram on the paper 
     width = None  # () real: width of the drawable area (sans margins) 
@@ -30,9 +30,9 @@ dia.Paperinfo is part of dia.DiagramData describing the paper    """
     
     def __init__(self) :
         self.height = None # 
-        self.is_portrait = None # 
-        self.name = None # 
-        self.scaling = None # 
+        self.is_portrait = True # 
+        self.name = 'A4' # 
+        self.scaling = 1 # 
         self.width = None # 
 
 _once.imported['Paperinfo']= Paperinfo

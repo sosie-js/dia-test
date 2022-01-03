@@ -1,5 +1,5 @@
 """
-  pydia: Layer.py - 2021.11
+  pydia: Layer.py - 2022.01
   ================================================
   
   Template code generated from UML diagrams of PyDia
@@ -10,12 +10,13 @@
   License: LGPL
 """
 
-
 import _once
 _once.imported['Layer']=None
 if not 'DiagramData' in _once.imported.keys() :
     from dia.libs.DiagramData import DiagramData
 
+import sys
+python2 = (sys.version_info[0] == 2)
 
 class Layer :
     '''A Layer is part of a Diagram and can contain objects.'''
@@ -74,7 +75,80 @@ class Layer :
 
     def update_extents (self) :
         """ update_extents() -> None.  Force recaculation of the layer extents. """
-        pass
+        
+        #Merge all bounding boxes 
+   
+        min_x = None 
+        min_y = None
+        max_x = None 
+        max_y = None
+        
+        
+        for o in self.objects :
+            bb = o.bounding_box
+            
+            items=bb.value
+            left=items[0][0]
+            top=items[0][1]
+            right=items[1][0]
+            bottom=items[1][1]
+            
+            # "h: %g w: %g" % (bb.bottom - bb.top, bb.right - bb.left)
+            #print(bb.left, bb.top, bb.right, bb.bottom)
+            items=[(left, top),(right, bottom)]
+
+            for item in items:
+                
+                if min_x is None or item[0] < min_x :
+                  min_x = item[0]
+
+                if max_x is None or item[0] > max_x:
+                  max_x = item[0]
+
+                if min_y is None  or item[1] < min_y:
+                  min_y = item[1]
+
+                if max_y is None  or item[1] > max_y:
+                  max_y = item[1]
+        
+        class Lists (list):
+
+            def __init__(self,left,top,right,bottom):
+                self.thelist=[None,None,None,None]
+                self.left = left
+                self.top = top
+                self.right = right
+                self.bottom = bottom
+            
+            def __setattr__(self, name, value):
+                if python2:
+                    super(list, self).__setattr__(name, value)
+                else:
+                    # in python3+ you can omit the arguments to super:
+                    super().__setattr__(name, value) 
+                
+                if name == 'left':   
+                    self.thelist[0]=value
+                if name == 'top':   
+                    self.thelist[1]=value
+                if name == 'right':   
+                    self.thelist[2]=value
+                if name == 'bottom':   
+                    self.thelist[3]=value
+                
+            def __getitem__(self, index):
+                return self.thelist[index]
+
+            def __setitem__(self, index, value):
+                self.thelist[index] = value
+
+            def __repr__(self):
+                return repr(thelist)
+        
+        
+        self.extents = Lists(min_x, min_y,max_y,max_y)
+
+
 
 
 _once.imported['Layer']= Layer
