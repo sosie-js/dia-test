@@ -1,8 +1,8 @@
 #
-#   diamock.py ..  bunnyfied by SoSie on 15 nov 2021
+#   diamock.py ..  bunnyfied by SoSie on 02 jan 2022
 #
 #  see https://sosie-js.github.io/python-dia/mock/
-#  version 1.3
+#  version 2.0
 #  This version adds about_diamock() popup
 
 
@@ -90,7 +90,7 @@ def about_diamock(*args):
     
     
 
-    VERSION="1.3"
+    VERSION="2.0"
     PROGRAM_NAME="Mock Plugin for Python-Dia"
     
     LICENSE="LGPL3"
