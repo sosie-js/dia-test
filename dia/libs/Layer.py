@@ -71,8 +71,23 @@ class Layer :
 
     def render (self, r) :
         """ render(dia.Renderer: r) -> None.  Render the layer with the given renderer """
-        pass
-
+       
+        #============= ALPHA ==========================
+        #!FIXME : Render from object shape in .dia/shapes or /usr/share/dia/shapes
+        # or reusing umldoc project?
+        #taken from codegen.py, produces now empty diagrams.
+        #maybe some part of export_object.py can be helpfull
+        # for the moment ignore layer info. But we could use this to spread accross different files
+        for o in self.objects :
+            if o.type.name == "UML - Class" :
+                #o.render(r)
+                pass
+            elif o.type.name == "UML - Association" :
+                # should already have got attributes relation by names
+                pass
+            # other UML objects which may be interesting
+            # UML - Note, UML - LargePackage, UML - SmallPackage, UML - Dependency, ...
+            
     def update_extents (self) :
         """ update_extents() -> None.  Force recaculation of the layer extents. """
         
